@@ -1,0 +1,9 @@
+dbt_learn_demo2:
+  outputs:
+    dev:
+      type: duckdb
+      path: 'data/dbt_learn.db'
+    prod:
+      type: duckdb
+      path: 'data/prod_dbt_learn.db'
+  target: dev
